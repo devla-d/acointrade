@@ -1,0 +1,145 @@
+{% extends "layouts/base.html" %}
+
+
+
+
+
+
+{% block content %}
+  
+  <!--navbar-->
+    {% include "com/navbar.html" %}
+  <!--navbar-->
+  <!--<br />-->
+  <br />
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>-->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "Nasdaq 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "BTC/USD"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "ETH/USD"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->                   
+                  <div class="get-touch section-padding"  data-scroll-index="6">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-xl-6">
+                          <div class="section-title">
+                              <h2>Get in touch. Stay in touch.</h2>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-6">
+                          <div class="get-touch-content">
+                              <div class="media">
+                                  <span><i class="fa fa-phone"></i></span>
+                                  <div class="media-body">
+                                      <h4>24 / 7 Support</h4>
+                                      <p>+1 (111) 111‑0000<br>
+   
+                                      </p>
+                                  </div>
+  
+                                  <span><i class="fa fa-envelope"></i></span>
+                                  <div class="media-body">
+                                      <h4>Email Us</h4>
+                                      <p>
+                                      info@acointrading.com                                    </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      
+                      <div class="col-xl-6 col-lg-6 col-md-6">
+                          <div class="get-touch-content">
+                              <div class="media">
+                                  <span><i class="fa fa-map-marker"></i></span>
+                                  <div class="media-body">
+                                      <h4>Location</h4>
+                                      
+                                      <p>
+                                      Melbourne, HS2 9QE, UK.                                     
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      </div>
+                  </div>
+              </div>
+          </div>        <div class="bottom section-padding">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                          <div class="bottom-logo">
+                              <img class="pb-3" src="https://acointrading.com/assets/home/images/logo.png" alt="">
+  
+                              <p>Trading Bitcoin and more Cryptocurrency Assets with ease.</p>
+                              <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li> 
+                          <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                          <div class="bottom-widget">
+                              <h4 class="widget-title">Support</h4>
+                              <ul>
+                                  <!--<li><a href="https://acointrading.com/index.php/home/about">About</a></li>-->
+                                  <li><a href="https://acointrading.com/index.php/home/contact">Contact</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/faqs">Faqs</a></li>
+                                   <li><a href="https://acointrading.com/index.php/home/terms">Terms & Conditions</a></li>
+                                
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                          <div class="bottom-widget">
+                              <h4 class="widget-title">Links</h4>
+                              <ul>
+                                  <li><a href="https://acointrading.com/index.php/home/plans">Plans</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/features">Features</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/prices">Prices</a></li> 
+                                  <li><a href="https://acointrading.com/index.php/home/privacy">Privacy</a></li>
+                                    
+                              </ul>
+                          </div>
+                      </div>
+  
+                       
+                     
+                      </div>
+                  </div>
+              </div>
+          </div>
+{% endblock content %}  

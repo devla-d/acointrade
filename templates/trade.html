@@ -1,0 +1,1451 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="Trade forex on MT4 or MT5 with a unique subscription model. One low monthly fee for 0 commissions, tight spreads and other exclusive benefits.">
+      <meta property="og:title" content="Acoin Trading - Trade FX and CFDs | Subscriptions & Low Trading Costs">
+      <meta property="og:description" content="Acoin Trading is a distinctive investment company offering our investors access to high-growth investment opportunities in Bitcoin markets and other services.">
+       <meta property="og:image" content="https://wallpaperaccess.com/full/1519087.jpg"/>
+      <title>Acoin Trading - Trade FX and CFDs | Subscriptions & Low Trading Costs </title>
+  
+      <!-- Favicon icon -->
+      <link rel="icon" type="image/png" sizes="16x16" href="/static/user/images/favicon.png">
+      <!-- Custom Stylesheet -->
+      <link rel="stylesheet" href="/static/css/nice-select.css">
+      <link rel="stylesheet" href="/static/css/waves.min.css">
+      <link rel="stylesheet" href="/static/css/toastr.min.css">
+      <link rel="stylesheet" href="/static/css/style.css">
+  
+  <style type="text/css">
+  
+  .float{
+      position:fixed;
+      width:60px;
+      height:60px;
+      bottom:40px;
+      right:40px;
+      background-color:#25d366;
+      color:#FFF;
+      border-radius:50px;
+      text-align:center;
+    font-size:30px;
+      box-shadow: 2px 2px 3px #999;
+    z-index:100;
+  }
+  
+  .my-float{
+      margin-top:16px;
+  }
+  
+      .my-custom-scrollbar {
+      position: relative;
+      height: 450px;
+      overflow: auto;
+      }
+      .table-wrapper-scroll-y {
+      display: block;
+      }
+  </style>
+  
+  </head>
+  
+  <body id="dashboard">
+  
+      <div id="preloader">
+          <div class="sk-three-bounce">
+              <div class="sk-child sk-bounce1"></div>
+              <div class="sk-child sk-bounce2"></div>
+              <div class="sk-child sk-bounce3"></div>
+          </div>
+      </div>
+  
+      <div id="main-wrapper">        <div class="header dashboard">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-xl-12">
+                          <nav class="navbar navbar-expand-lg navbar-light px-0 justify-content-between">
+                              <a class="navbar-brand" style="color: #fff; font-weight: bold" href="https://acointrading.com/index.php/user/">ACOIN TRADING</a>
+  
+                              <div class="header-right d-flex my-2 align-items-center">
+                                  <div class="language">
+                                          <div id="google_translate_element"></div><script type="text/javascript">
+                                          function googleTranslateElementInit() {
+                                            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                                          }
+                                          </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                                  </div>
+                                  <div class="dashboard_log">
+                                      <div class="profile_log dropdown">
+                                          <div class="user" data-toggle="dropdown">
+                                              <span class="thumb"><i class="mdi mdi-account"></i></span>
+                                              <span class="arrow"><i class="la la-angle-down"></i></span>
+                                          </div>
+  
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                              <div class="user-email">
+                                                  <div class="user">
+                                                      <span class="thumb"><i class="mdi mdi-account"></i></span>
+                                                      <div class="user-info">
+                                                          <h6>Carrie Reilly</h6>
+                                                          <span>m0qbzl69@temporary-mail.net</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+  
+                                              <div class="user-balance">
+                                                  <div class="available">
+                                                      <p>USD Balance</p>
+                                                      <span>$ 0</span>
+                                                  </div>
+                                                  <div class="total">
+                                                      <p>BTC Balance</p>
+                                                      <span>0.00000000</span>
+                                                  </div>
+                                              </div>
+                                              <a href="https://acointrading.com/index.php/user/userProfile" class="dropdown-item">
+                                                  <i class="mdi mdi-account"></i> Account
+                                              </a>
+                                              <a href="https://acointrading.com/index.php/user/logout" class="dropdown-item logout">
+                                                  <i class="mdi mdi-logout"></i> Logout
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div><div class="sidebar">
+              <div class="menu">
+                  <ul>
+                      <li>
+                          <a href="https://acointrading.com/index.php/user/" data-toggle="tooltip" data-placement="right">
+                              <span><i class="mdi mdi-view-dashboard"></i></span><font color="white"><small>Trade</font>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://acointrading.com/index.php/user/tradeHistory" data-toggle="tooltip" data-placement="right" >
+                              <span><i class="mdi mdi-tumblr-reblog"></i></span><font color="white">Trade Overview</font>
+                          </a>
+                           
+  
+                      </li>
+                      <li>
+                          <a href="https://acointrading.com/index.php/user/fundAccount" data-toggle="tooltip" data-placement="right" >
+                              <span><i class="mdi mdi-face-profile"></i></span>
+                              <font color="white">Deposit</font>
+                          </a>
+                      </li>
+  
+                      <li>
+                          <a href="https://acointrading.com/index.php/user/withdrawFund" data-toggle="tooltip" data-placement="right">
+                              <span><i class="mdi mdi-face-profile"></i></span>
+                              <font color="white">Withdraw</font>
+                          </a>
+                      </li>
+  
+                      <li>
+                          <a href="https://acointrading.com/index.php/user/tradePlans" data-toggle="tooltip" data-placement="right">
+                              <span><i class="mdi mdi-database"></i></span>
+                              <font color="white">Trade Plans</font>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://acointrading.com/index.php/user/userProfile" data-toggle="tooltip" data-placement="right">
+                              <span><i class="mdi mdi-settings"></i></span>
+                              <font color="white">Settings</font></small>
+                          </a>
+                      </li>
+                       
+                  </ul>
+              </div>
+          </div><div class="content-body">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-xl-6 col-xxl-12 col-lg-12 col-xxl-6">
+                  <div class="card">
+                      <div class="card-header">
+                          <h4 class="card-title">LIVE - TRADING DASHBOARD</h4>
+  
+                          <span><h4 class="card-title"><strong class="text-success">Switch to </blink> - <a href="https://acointrading.com/index.php/user/demo_trading"><font color="red">DEMO TRADING DASHBOARD</font></a></strong></h4></span>
+                      </div>
+                      <div class="card-body">
+                          <div class="row">
+                              <!-- TradingView Widget BEGIN -->
+                              <div class="tradingview-widget-container">
+                                  <div class="tradingview-widget-container__widget"></div>
+                                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                                      {
+                                          "colorTheme": "dark"
+                                        }
+                                  </script>
+  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-xl-6 col-xxl-12 col-lg-12 col-xxl-6">
+                                          <div class="card">
+                          <div class="card-header">
+                              <h4 class="card-title">Your Trading Wallet</h4>
+                              <h4 class="card-title pull-right text-success">Referral Bonus: 0.00</h4>
+                          </div>
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-xl col-lg col-md col-sm-auto col-6">
+                                      <p class="mb-0">BTC</p>
+                                      <h6>
+                                          0.00000000                                    </h6>
+                                  </div>
+                                  <div class="col-xl col-lg col-md col-sm-auto col-6">
+                                      <p class="mb-0">USD</p>
+                                      <h6>
+                                          $ 0.00                                    </h6>
+                                  </div>
+                                  <div class="col-xl col-lg col-md col-sm-auto col-6">
+                                      <p class="mb-0">EUR</p>
+                                      <h6>
+                                          € 0.00                                    </h6>
+                                  </div>
+                                  <div class="col-xl col-lg col-md col-sm-auto col-6">
+                                      <p class="mb-0">GBP</p>
+                                      <h6>
+                                          £ 0.00                                    </h6>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+  
+              <div class="row">
+                  <div class="col-xl-5 col-lg-8 col-md-12 col-xxl-8">
+  
+                      <!-- TradingView Widget BEGIN -->
+                      <div class="tradingview-widget-container card">
+                          <div id="tradingview_e8053"></div>
+  
+                      </div>
+                      <!-- TradingView Widget END -->
+                  </div>
+  
+                  <div class="col-xl-2 col-lg-4 col-md-12 col-xxl-4">
+                      <div class="card">
+                          <div class="card-header">
+                              <h4 class="card-title"> </h4>
+                          </div>
+                          <div class="card-body balance-widget">
+                              <div class="total-balance">
+                                  <iframe width="100%" scrolling="yes" allowtransparency="true" frameborder="0" src="https://cryptopanic.com/widgets/news/?bg_color=131722&amp;font_family=sans&amp;header_bg_color=30343B&amp;header_text_color=FFFFFF&amp;link_color=FFFFFF&amp;news_feed=trending&amp;posts_limit=20&amp;text_color=E50202&amp;" height="350px"></iframe>
+  
+                              </div>
+  
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-xl-3 col-lg-4 col-md-12 col-xxl-4">
+                      <div class="card">
+                          <div class="card-header">
+                              <ul class="nav nav-pills" role="tablist">
+                                  <li class="nav-item">
+                                      <a class="nav-link" data-toggle="pill" href="#STAR" role="tab" aria-selected="true"><i class="mdi mdi-star"></i></a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link active" data-toggle="pill" href="#BTC" role="tab" aria-selected="true">BTC</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" data-toggle="pill" href="#ETH" role="tab" aria-selected="false">ETH</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" data-toggle="pill" href="#NEO" role="tab" aria-selected="false">NEO</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" data-toggle="pill" href="#USDT" role="tab" aria-selected="false">USDT</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" data-toggle="pill" href="#DAI" role="tab" aria-selected="false">DAI</a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="card-body  price-pair">
+  
+                              <div class="tab-content">
+                                  <div class="tab-pane fade show" id="STAR" role="tabpanel">
+                                      <table class="table">
+                                          <thead>
+                                              <tr>
+                                                  <th>Pairs</th>
+                                                  <th>Last Price</th>
+                                                  <th>Change</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ETH/BTC</td>
+                                                  <td>0.00020255</td>
+                                                  <td class="red">-2.58%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> KCS/BTC</td>
+                                                  <td>0.00013192</td>
+                                                  <td class="green">+5.6%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XRP/BTC</td>
+                                                  <td>0.00002996</td>
+                                                  <td class="red">-1.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> VET/BTC</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="green">+1.8%</td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                                  <div class="tab-pane fade show active" id="BTC" role="tabpanel">
+                                      <table class="table">
+                                          <thead>
+                                              <tr>
+                                                  <th>Pairs</th>
+                                                  <th>Last Price</th>
+                                                  <th>Change</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ETH/BTC</td>
+                                                  <td>0.00020255</td>
+                                                  <td class="red">-2.58%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> KCS/BTC</td>
+                                                  <td>0.00013192</td>
+                                                  <td class="green">+5.6%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XRP/BTC</td>
+                                                  <td>0.00002996</td>
+                                                  <td class="red">-1.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> VET/BTC</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="green">+1.8%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> EOS/BTC</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BTT/BTC</td>
+                                                  <td>0.00002303</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> LTC/BTC</td>
+                                                  <td>0.03520103</td>
+                                                  <td class="green">+1.5%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> TRX/BTC</td>
+                                                  <td>0.00330103</td>
+                                                  <td class="red">-3.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BSV/BTC</td>
+                                                  <td>0.00300103</td>
+                                                  <td class="green">+2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> COTI/BTC</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="green">+2.85%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XYT/BTC</td>
+                                                  <td>0.00003103</td>
+                                                  <td class="green">+3.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BNB/BTC</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XMR/BTC</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> TRY/BTC</td>
+                                                  <td>0.00000123</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ADA/BTC</td>
+                                                  <td>0.00050103</td>
+                                                  <td class="green">+5.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> NEO/BTC</td>
+                                                  <td>0.00340103</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XLM/BTC</td>
+                                                  <td>0.00035103</td>
+                                                  <td class="green">+5.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ENQ/BTC</td>
+                                                  <td>0.00354103</td>
+                                                  <td class="green">+2.02%</td>
+                                              </tr>
+  
+                                          </tbody>
+                                      </table>
+                                  </div>
+                                  <div class="tab-pane fade show" id="ETH" role="tabpanel">
+                                      <table class="table">
+                                          <thead>
+                                              <tr>
+                                                  <th>Pairs</th>
+                                                  <th>Last Price</th>
+                                                  <th>Change</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BTC/ETH</td>
+                                                  <td>0.00020255</td>
+                                                  <td class="green">+1.58%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> KCS/ETH</td>
+                                                  <td>0.00013192</td>
+                                                  <td class="red">-0.6%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XRP/ETH</td>
+                                                  <td>0.00002996</td>
+                                                  <td class="red">-0.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> VET/ETH</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="green">+1.8%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> EOS/ETH</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BTT/ETH</td>
+                                                  <td>0.00002303</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> LTC/ETH</td>
+                                                  <td>0.03520103</td>
+                                                  <td class="green">+1.5%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> TRX/ETH</td>
+                                                  <td>0.00330103</td>
+                                                  <td class="red">-3.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BSV/ETH</td>
+                                                  <td>0.00300103</td>
+                                                  <td class="green">+2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> COTI/ETH</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="green">+2.85%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XYT/ETH</td>
+                                                  <td>0.00003103</td>
+                                                  <td class="green">+3.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BNB/ETH</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XMR/ETH</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> TRY/ETH</td>
+                                                  <td>0.00000123</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ADA/ETH</td>
+                                                  <td>0.00050103</td>
+                                                  <td class="green">+5.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> NEO/ETH</td>
+                                                  <td>0.00340103</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XLM/ETH</td>
+                                                  <td>0.00035103</td>
+                                                  <td class="green">+5.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ENQ/ETH</td>
+                                                  <td>0.00354103</td>
+                                                  <td class="green">+2.02%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> AVA/ETH</td>
+                                                  <td>0.02535103</td>
+                                                  <td class="green">+3.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> AMB/ETH</td>
+                                                  <td>0.05335103</td>
+                                                  <td class="green">+1.0%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> MAP/ETH</td>
+                                                  <td>0.00234103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> GO/ETH</td>
+                                                  <td>0.00354103</td>
+                                                  <td class="red">-6.50%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> KICK/ETH</td>
+                                                  <td>0.02053103</td>
+                                                  <td class="red">-6.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> DBC/ETH</td>
+                                                  <td>0.02535103</td>
+                                                  <td class="green">+7.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> GGC/ETH</td>
+                                                  <td>0.00353103</td>
+                                                  <td class="red">-4.05%</td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                                  <div class="tab-pane fade show" id="NEO" role="tabpanel">
+                                      <table class="table">
+                                          <thead>
+                                              <tr>
+                                                  <th>Pairs</th>
+                                                  <th>Last Price</th>
+                                                  <th>Change</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ETH/NEO</td>
+                                                  <td>0.00350255</td>
+                                                  <td class="red">-6.58%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> KCS/NEO</td>
+                                                  <td>0.00013192</td>
+                                                  <td class="green">+0.6%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XRP/NEO</td>
+                                                  <td>0.00002996</td>
+                                                  <td class="red">-0.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> VET/NEO</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="green">+1.8%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> EOS/NEO</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BTT/NEO</td>
+                                                  <td>0.00002303</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> LTC/NEO</td>
+                                                  <td>0.03520103</td>
+                                                  <td class="green">+1.5%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> TRX/NEO</td>
+                                                  <td>0.00330103</td>
+                                                  <td class="red">-3.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BSV/NEO</td>
+                                                  <td>0.00300103</td>
+                                                  <td class="green">+2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> COTI/NEO</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="green">+2.85%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XYT/NEO</td>
+                                                  <td>0.00003103</td>
+                                                  <td class="green">+3.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BNB/NEO</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XMR/NEO</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> TRY/NEO</td>
+                                                  <td>0.00000123</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ADA/NEO</td>
+                                                  <td>0.00050103</td>
+                                                  <td class="green">+5.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> NEO/NEO</td>
+                                                  <td>0.00340103</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XLM/NEO</td>
+                                                  <td>0.00035103</td>
+                                                  <td class="green">+5.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ENQ/NEO</td>
+                                                  <td>0.00354103</td>
+                                                  <td class="green">+2.02%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> AVA/NEO</td>
+                                                  <td>0.02535103</td>
+                                                  <td class="green">+3.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> AMB/NEO</td>
+                                                  <td>0.05335103</td>
+                                                  <td class="green">+1.0%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> MAP/NEO</td>
+                                                  <td>0.00234103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> GO/NEO</td>
+                                                  <td>0.00354103</td>
+                                                  <td class="red">-6.50%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> KICK/NEO</td>
+                                                  <td>0.02053103</td>
+                                                  <td class="red">-6.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> DBC/NEO</td>
+                                                  <td>0.02535103</td>
+                                                  <td class="green">+7.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> GGC/NEO</td>
+                                                  <td>0.00353103</td>
+                                                  <td class="red">-4.05%</td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                                  <div class="tab-pane fade show" id="USDT" role="tabpanel">
+                                      <table class="table">
+                                          <thead>
+                                              <tr>
+                                                  <th>Pairs</th>
+                                                  <th>Last Price</th>
+                                                  <th>Change</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ETH/USDT</td>
+                                                  <td>0.00350255</td>
+                                                  <td class="red">-2.58%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> KCS/USDT</td>
+                                                  <td>0.00013192</td>
+                                                  <td class="green">+6.6%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XRP/USDT</td>
+                                                  <td>0.00002996</td>
+                                                  <td class="red">-0.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> VET/USDT</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="green">+1.8%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> EOS/USDT</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BTT/USDT</td>
+                                                  <td>0.00002303</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> LTC/USDT</td>
+                                                  <td>0.03520103</td>
+                                                  <td class="green">+1.5%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> TRX/USDT</td>
+                                                  <td>0.00330103</td>
+                                                  <td class="red">-3.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BSV/USDT</td>
+                                                  <td>0.00300103</td>
+                                                  <td class="green">+2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> COTI/USDT</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="green">+2.85%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XYT/USDT</td>
+                                                  <td>0.00003103</td>
+                                                  <td class="green">+3.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BNB/USDT</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XMR/USDT</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> TRY/USDT</td>
+                                                  <td>0.00000123</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ADA/USDT</td>
+                                                  <td>0.00050103</td>
+                                                  <td class="green">+5.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> USDT/USDT</td>
+                                                  <td>0.00340103</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XLM/USDT</td>
+                                                  <td>0.00035103</td>
+                                                  <td class="green">+5.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ENQ/USDT</td>
+                                                  <td>0.00354103</td>
+                                                  <td class="green">+2.02%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> AVA/USDT</td>
+                                                  <td>0.02535103</td>
+                                                  <td class="green">+3.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> AMB/USDT</td>
+                                                  <td>0.05335103</td>
+                                                  <td class="green">+1.0%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> MAP/USDT</td>
+                                                  <td>0.00234103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> GO/USDT</td>
+                                                  <td>0.00354103</td>
+                                                  <td class="red">-6.50%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> KICK/USDT</td>
+                                                  <td>0.02053103</td>
+                                                  <td class="red">-6.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> DBC/USDT</td>
+                                                  <td>0.02535103</td>
+                                                  <td class="green">+7.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> GGC/USDT</td>
+                                                  <td>0.00353103</td>
+                                                  <td class="red">-4.05%</td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                                  <div class="tab-pane fade show" id="DAI" role="tabpanel">
+                                      <table class="table">
+                                          <thead>
+                                              <tr>
+                                                  <th>Pairs</th>
+                                                  <th>Last Price</th>
+                                                  <th>Change</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ETH/DAI</td>
+                                                  <td>0.05320255</td>
+                                                  <td class="green">+6.58%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> KCS/DAI</td>
+                                                  <td>0.00013192</td>
+                                                  <td class="green">+0.6%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XRP/DAI</td>
+                                                  <td>0.00002996</td>
+                                                  <td class="red">-0.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> VET/DAI</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="green">+1.8%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> EOS/DAI</td>
+                                                  <td>0.00000103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BTT/DAI</td>
+                                                  <td>0.00002303</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> LTC/DAI</td>
+                                                  <td>0.03520103</td>
+                                                  <td class="green">+1.5%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> TRX/DAI</td>
+                                                  <td>0.00330103</td>
+                                                  <td class="red">-3.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BSV/DAI</td>
+                                                  <td>0.00300103</td>
+                                                  <td class="green">+2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> COTI/DAI</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="green">+2.85%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XYT/DAI</td>
+                                                  <td>0.00003103</td>
+                                                  <td class="green">+3.55%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> BNB/DAI</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XMR/DAI</td>
+                                                  <td>0.003500103</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> TRY/DAI</td>
+                                                  <td>0.00000123</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ADA/DAI</td>
+                                                  <td>0.00050103</td>
+                                                  <td class="green">+5.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> DAI/DAI</td>
+                                                  <td>0.00340103</td>
+                                                  <td class="red">-1.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> XLM/DAI</td>
+                                                  <td>0.00035103</td>
+                                                  <td class="green">+5.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> ENQ/DAI</td>
+                                                  <td>0.00354103</td>
+                                                  <td class="green">+2.02%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> AVA/DAI</td>
+                                                  <td>0.02535103</td>
+                                                  <td class="green">+3.05%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> AMB/DAI</td>
+                                                  <td>0.05335103</td>
+                                                  <td class="green">+1.0%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td><i class="mdi mdi-star"></i> MAP/DAI</td>
+                                                  <td>0.00234103</td>
+                                                  <td class="red">-2.05%</td>
+                                              </tr>
+  
+                                          </tbody>
+                                      </table>
+                                  </div>
+  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-xl-5 col-lg-8 col-md-12 col-xxl-8">
+                      <div class="card">
+                          <div class="card-header">
+                              <h4 class="card-title">Depth Chart</h4>
+                          </div>
+                          <div class="card-body">
+                              <div id="chartdiv"></div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- BUY-->
+                  <div class="col-xl-2 col-lg-4 col-md-6 col-xxl-4">
+  
+                      <div class="card">
+                          <div class="card-header">
+  
+                          </div>
+                          <div class="card-body market-limit">
+                              <div class="tab-content">
+                                  <div class="tab-pane fade show active" id="limit" role="tabpanel">
+  
+  
+                                                                  
+                                      <form action="https://acointrading.com/index.php/user/buy_trade"  class="currency_limit" method="POST">
+  
+                                          <input type="hidden" name="ci_csrf_token" value="" />
+  
+                                          <input type="hidden" name="buy" value="Buy">
+  
+                                          <div class="form-group">
+                                              <div class="input-group">
+                                                  <input type="number" id="amount_trade2" required name="amount" value="20" required data-decimals="2" min="20" class="form-control" placeholder="Amount">
+                                              </div>
+                                          </div>
+  
+                                          <div class="form-group">
+                                              <div class="input-group">
+                                                  <select name="symbols" required id="showsymbols" class="form-control">
+                                                <option value="USD/BTC" >USD/BTC</option>
+                                                <option value="BCH/BTC" >BCH/BTC</option>
+                                                <option value="BCH/EUR" >BCH/EUR</option>
+                                                <option value="BCH/GBP" >BCH/GBP</option>
+                                                <option value="BTC-EOS" >BTC-EOS</option>
+                                                <option value="BTC/EUR" >BTC/EUR</option>
+                                                <option value="BTC/GBP" >BTC/GBP</option>
+                                                <option value="BTC/USD" >BTC/USD</option>
+                                                <option value="BTC/USDC" >BTC/USDC</option>
+                                                <option value="EOS/BTC" >EOS/BTC</option>
+                                                <option value="EOS/EUR" >EOS/EUR</option>
+                                                <option value="EOS/USD" >EOS/USD</option>
+                                                <option value="ETC/BTC" >ETC/BTC</option>      
+                                                <option value="ETC/EUR" >ETC/EUR</option>
+                                                <option value="ETC/GBP" >ETC/GBP</option>
+                                                <option value="ETC/USD" >ETC/USD</option>
+                                                <option value="ETH/BTC" >ETH/BTC</option>
+                                                <option value="ETH/EUR" >ETH/EUR</option>
+                                                <option value="ETH/GBP" >ETH/GBP</option>
+                                                <option value="ETH/USD" >ETH/USD</option>
+                                                <option value="LTC/BTC" >LTC/BTC</option>
+                                                <option value="LTC/EUR" >LTC/EUR</option>
+                                                <option value="LTC/GBP" >LTC/GBP</option>
+                                                <option value="LTC/USD" >LTC/USD</option>
+                                                <option value="MKR/BTC" >MKR/BTC</option>
+                                                <option value="PCP-BTC" >PCP-BTC</option>
+                                                <option value="PCP-BTC" >REP/BTC</option>
+                                                <option value="REP/USD" >REP/USD</option>
+                                                <option value="TXR/GBP">TXR/GBP</option>
+                                                <option value="XLM/BTC">XLM/BTC</option>
+                                                <option value="XLM/EUR">XLM/EUR</option>
+                                                <option value="XLM/USD">XLM/USD</option>
+                                                <option value="XRP/BTC">XRP/BTC</option>
+                                                <option value="XRP/EUR">XRP/EUR</option>
+                                                <option value="XRP/USD">XRP/USD</option>
+                                                <option value="ZEC/BTC">ZEC/BTC</option>
+                                                <option value="ZRX/BTC">ZRX/BTC</option>
+                                                <option value="ZRX/EUR">ZRX/EUR</option>
+                                                <option value="ZRX/USD">ZRX/USD</option>
+                                              </select>
+                                                  <div class="input-group-append">
+                                                      <span class="input-group-text">Symbol</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+  
+                                          <div class="form-group">
+                                              <div class="input-group">
+  
+                                                  <select class="form-control" id="interval">
+                                                   <option value="60">1 min</option>
+                                                   <option value="180">3 min</option>
+                                                   <option value="300">5 min</option>
+                                                   <option value="900">15 mins</option>
+                                                   <option value="1800">30 mins</option>
+                                                   <option value="3600">1 hr</option>
+                                                   <option value="7200">2 hr</option>
+                                                   <option value="86400">1 day</option>
+                                                  </select>
+                                                  <div class="input-group-append">
+                                                      <span class="input-group-text">Interval</span>
+                                                  </div>
+  
+                                              </div>
+                                          </div>
+  
+                                          <div class="form-group">
+                                              <div class="input-group">
+  
+                                                  <select class="form-control" name="leverage" id="strikerate" required>
+                     
+                                          <!-- <option value="">Please select</option> -->
+                                          <option value="0.5X" data-rate="high_sell" data-buy="" data-sell="3">0.5X</option>
+                                          <option value="1X" data-rate="high_sell" data-buy="" data-sell="3">1.0X</option>
+                                          <option value="1.5X" data-rate="high_sell" data-buy="" data-sell="3">1.5X</option>
+                                          <option value="2X" data-rate="high_sell" data-buy="" data-sell="3">2.0X</option>
+                                          <option value="5X" data-rate="high_sell" data-buy="" data-sell="3">5X</option>
+                                          <option value="10X" data-rate="high_sell" data-buy="" data-sell="3">10X</option>
+  
+                                   </select>
+  
+                                                  <div class="input-group-append">
+                                                      <span class="input-group-text">Leverage</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+  
+                                          <div class="btn-group btn-block mt-3">
+                                              <button type="submit" class="btn btn-success">Buy
+                                                      Now</button>
+  
+                                          </div>
+  
+                                      </form>
+  
+                                  </div>
+  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!--END BUY-->
+  
+                  <!--SELL-->
+                  <div class="col-xl-2 col-lg-4 col-md-6 col-xxl-4">
+  
+                      <div class="card">
+                          <div class="card-header">
+  
+                          </div>
+                          <div class="card-body market-limit">
+                              <div class="tab-content">
+                                  <div class="tab-pane fade show active" id="limit" role="tabpanel">
+  
+                                                                      
+                                      <form action="https://acointrading.com/index.php/user/sell_trade" class="currency_limit" id="tradelive2" method="POST">
+  
+                                              <input type="hidden" name="ci_csrf_token" value="" />
+  
+  
+                                          <input type="hidden" name="sell" value="Sell">
+  
+  
+                                          <div class="form-group">
+                                              <div class="input-group">
+                                                  <input type="number" id="amount_trade22" required name="amount" value="20" data-decimals="2" min="20" class="form-control" placeholder="Amount">
+                                              </div>
+                                          </div>
+  
+                                          <style>
+                                              /*======================================
+                                                jQuery Select
+                                                https://cdnjs.com/libraries/jquery-nice-select
+                                              ======================================*/
+  
+                                               
+  
+                                              /* custom scroll bar style start*/
+  
+                                              // ::-webkit-scrollbar {
+                                              //     width: 8px;
+                                              //     background: transparent;
+                                              // }
+  
+                                              // ::-webkit-scrollbar-thumb {
+                                              //     border-radius: 10px;
+                                              //      min-height:50px;
+                                              //     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+                                              //     background-color: #666;
+                                              // }
+  
+                                              ::-webkit-scrollbar-track {
+                                                  /*
+                                                  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                                                  border-radius: 10px;
+                                                  background-color: rgba(255,255,255,0.2);*/
+                                              }
+  
+  
+                                              /*custom scrollbar end here */
+  
+                                              .container {
+                                                  width: 750px;
+                                                  margin: 0 auto;
+                                              }
+  
+  
+                                              /* style for nice select*/
+  
+                                              .nice-select {
+                                                  border-radius: 0px;
+                                              }
+  
+                                              .nice-select .list {
+                                                  border-radius: 0px;
+                                                  height: 200px;
+                                                  overflow-y: auto;
+                                              }
+                                              .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+                                                color:red;
+                                                background: none;
+                                              }
+                                          </style>
+  
+                                          <div class="form-group">
+                                              <div class="input-group">
+                                                  <select name="symbols" required class="form-control">
+                                                
+                                                <option value="USD/BTC" >USD/BTC</option>
+                                                <option value="BCH/BTC" >BCH/BTC</option>
+                                                <option value="BCH/EUR" >BCH/EUR</option>
+                                                <option value="BCH/GBP" >BCH/GBP</option>
+                                                <option value="BTC-EOS" >BTC-EOS</option>
+                                                <option value="BTC/EUR" >BTC/EUR</option>
+                                                <option value="BTC/GBP" >BTC/GBP</option>
+                                                <option value="BTC/USD" >BTC/USD</option>
+                                                <option value="BTC/USDC" >BTC/USDC</option>
+                                                <option value="EOS/BTC" >EOS/BTC</option>
+                                                <option value="EOS/EUR" >EOS/EUR</option>
+                                                <option value="EOS/USD" >EOS/USD</option>
+                                                <option value="ETC/BTC" >ETC/BTC</option>      
+                                                <option value="ETC/EUR" >ETC/EUR</option>
+                                                <option value="ETC/GBP" >ETC/GBP</option>
+                                                <option value="ETC/USD" >ETC/USD</option>
+                                                <option value="ETH/BTC" >ETH/BTC</option>
+                                                <option value="ETH/EUR" >ETH/EUR</option>
+                                                <option value="ETH/GBP" >ETH/GBP</option>
+                                                <option value="ETH/USD" >ETH/USD</option>
+                                                <option value="LTC/BTC" >LTC/BTC</option>
+                                                <option value="LTC/EUR" >LTC/EUR</option>
+                                                <option value="LTC/GBP" >LTC/GBP</option>
+                                                <option value="LTC/USD" >LTC/USD</option>
+                                                <option value="MKR/BTC" >MKR/BTC</option>
+                                                <option value="PCP-BTC" >PCP-BTC</option>
+                                                <option value="PCP-BTC" >REP/BTC</option>
+                                                <option value="REP/USD" >REP/USD</option>
+                                                <option value="TXR/GBP">TXR/GBP</option>
+                                                <option value="XLM/BTC">XLM/BTC</option>
+                                                <option value="XLM/EUR">XLM/EUR</option>
+                                                <option value="XLM/USD">XLM/USD</option>
+                                                <option value="XRP/BTC">XRP/BTC</option>
+                                                <option value="XRP/EUR">XRP/EUR</option>
+                                                <option value="XRP/USD">XRP/USD</option>
+                                                <option value="ZEC/BTC">ZEC/BTC</option>
+                                                <option value="ZRX/BTC">ZRX/BTC</option>
+                                                <option value="ZRX/EUR">ZRX/EUR</option>
+                                                <option value="ZRX/USD">ZRX/USD</option>
+                                              </select>
+                                                  <div class="input-group-append">
+                                                      <span class="input-group-text">Symbol</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+  
+                                          <div class="form-group">
+                                              <div class="input-group">
+  
+                                                  <select class="form-control" name="interval" required>
+                                                   <option value="60">1 min</option>
+                                                   <option value="180">3 min</option>
+                                                   <option value="300">5 min</option>
+                                                   <option value="900">15 mins</option>
+                                                   <option value="1800">30 mins</option>
+                                                   <option value="3600">1 hr</option>
+                                                   <option value="7200">2 hr</option>
+                                                   <option value="86400">1 day</option>
+                                                  </select>
+                                                  <div class="input-group-append">
+                                                      <span class="input-group-text">Interval</span>
+                                                  </div>
+  
+                                              </div>
+                                          </div>
+  
+                                          <div class="form-group">
+                                              <div class="input-group">
+  
+                                                  <select class="form-control" name="leverage" required>
+   
+                                          <option value="0.5X" data-rate="high_sell" data-buy="" data-sell="3">0.5X</option>
+                                          <option value="1X" data-rate="high_sell" data-buy="" data-sell="3">1.0X</option>
+                                          <option value="1.5X" data-rate="high_sell" data-buy="" data-sell="3">1.5X</option>
+                                          <option value="2X" data-rate="high_sell" data-buy="" data-sell="3">2.0X</option>
+                                          <option value="5X" data-rate="high_sell" data-buy="" data-sell="3">5X</option>
+                                          <option value="10X" data-rate="high_sell" data-buy="" data-sell="3">10X</option>
+  
+  
+                                  </select>
+  
+                                                  <div class="input-group-append">
+                                                      <span class="input-group-text">Leverage</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+  
+                                          <div class="btn-group btn-block mt-3">
+  
+                                              <button type="submit" class="btn btn-danger">Sell
+                                                      Now</button>
+                                          </div>
+  
+                                      </form>
+  
+                                  </div>
+  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!--END SELL-->
+  
+                  <div class="col-xl-2 col-lg-4 col-xxl-4">
+                      <div class="card">
+                          <div class="card-header">
+                              <h6>CRYPTOCURRENCY CONVERTER</h6>
+                          </div>
+                          <div class="card-header">
+                              <iframe src="https://widget.coinlib.io/widget?type=converter&theme=dark" width="550" height="310px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
+                          </div>
+                      </div>
+                  </div>
+  
+  <!--                 <style>
+                      .wrapper {
+                   
+                    height: 500px;
+                    width: 1200px;
+                    overflow: auto;
+                  }
+                  </style> -->
+                  <!-- <div class="wrapper"> -->
+                      <div class="col-xl-12">
+                          <div class="card">
+                                  <div class="card-body">
+                              <div class="transaction-table">
+                              <div class="table-responsive">
+                              <table class="table table-striped mb-0 table-responsive-sm">
+                                  <thead>
+                                      <tr>
+                                          <th>Trade ID</th>
+                                          <th>Trade Time</th>
+                                          <th>Symbol Traded</th>
+                                          <th>Amount Traded</th>
+                                          <th>Expected Payout</th>
+                                          <th>Leverage</th>
+  
+                                          <th>End Price</th>
+                                          <th>End Time</th>
+                                          <th>Trade Status</th>
+  
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                                                          <tr>
+                                        <td colspan="9">
+                                            <div class="alert alert-danger text-center text-bold"> No Trade in History Yet! </div>
+                                        </td>
+                                      </tr> 
+  
+                              
+                                  </tbody>
+                              </table>
+                              </div>
+                              </div>
+                          </div>
+                  </div>
+                  </div>
+                  </div>
+  
+              </div>        <div class="footer dashboard">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-sm-8 col-12">
+                          <div class="copyright">
+                              <p>&copy; Copyright 2021 <a href="https://acointrading.com/index.php">Acoin Trading</a>
+                                  All Rights Reserved</p>
+                          </div>
+                      </div>
+                      <div class="col-sm-4 col-12">
+                          <div class="footer-social">
+                              <ul>
+                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+  
+      <script src="/static/user/js/ext.js"></script>
+      <script src="/static/js/global.js"></script>
+      <script src="/static/user/js/bootstrap-input-spinner.js"></script>
+      <script src="/static/user/js/amcharts.js"></script>
+      <script src="/static/user/js/serial.js"></script>
+      <script src="/static/user/js/dataloader.min.js"></script>
+      <script src="/static/user/js/dark.js"></script>
+      <script src="/static/user/js/amchart-init.js"></script>
+  
+      <script src="/static/user/js/toastr.min.js"></script>
+      <script src="/static/user/js/toastr-init.js"></script>
+  
+      <script src="/static/user/js/circle-progress.min.js"></script>
+      <script src="/static/user/js/circle-progress-init.js"></script>
+  
+  
+      <!--  flot-chart js -->
+      <script src="/static/js/perfect-scrollbar.min.js"></script>
+      <script src="/static/js/apexchart-init.js"></script>
+  
+  
+      <!-- <script src="./js/dashboard.js"></script> -->
+  
+      <script src="/static/user/js/dashboard.js"></script>
+      <script src="/static/js/scripts.js"></script>
+  
+      <script src="/static/user/js/clipboard.min.js"></script>
+      <script>
+          new ClipboardJS('.btn');
+      </script>
+  
+      <script src="/static/user/js/settings.js"></script>
+      <script src="/static/user/js/quixnav-init.js"></script>
+      <script src="/static/user/js/styleSwitcher.js"></script>
+       <script src="https://s3.tradingview.com/tv.js"></script>
+      <script>
+          new TradingView.widget(
+              {
+                  "width": "100%",
+                  "height": 460,
+                  "symbol": "BITSTAMP:BTCUSD",
+                  "interval": "D",
+                  "timezone": "Etc/UTC",
+                  "theme": "Dark",
+                  "style": "1",
+                  "locale": "en",
+                  "toolbar_bg": "#f1f3f6",
+                  "enable_publishing": false,
+                  "withdateranges": true,
+                  "hide_side_toolbar": false,
+                  "allow_symbol_change": true,
+                  "show_popup_button": true,
+                  "popup_width": "1000",
+                  "popup_height": "650",
+                  "container_id": "tradingview_e8053"
+              }
+  
+          );
+  
+      </script>
+  
+      <script>
+          var auto_refresh = setInterval(
+          (function () {
+              $("#randomtext").load("load_trade_history"); //Load the content into the div
+          }), 1000);
+      </script>
+  
+      <script>
+          setInterval(function(){
+          $("#diw").load("btc_usd_converter");
+          },700);
+      </script>
+  
+  <a href="https://wa.me/11113180000" class="float" target="_blank"><i class="fa fa-whatsapp my-float fa-lg"></i></a>
+  
+ 
+  
+  </body>
+  
+  </html>

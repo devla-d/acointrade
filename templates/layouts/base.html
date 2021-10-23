@@ -1,0 +1,51 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+
+    <!--header-->
+    {% include "com/header.html" %}
+    <!--header-->
+
+  </head>
+  <style>
+      #div_id_currency > div > span{
+        width: 100% !important;
+        background: #000;
+        font-size: 16px;
+    font-weight: 400;
+    color: #a1a0a7;
+      }
+  </style>
+  
+  <body style="background-color: #150556">
+  
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+  
+  <div id="main-wrapper">
+      {% block content %} {% endblock content %}
+   </div>
+         
+
+  
+  
+
+
+    <!--scripts-->
+        {% include "com/footer.html" %}
+    <!--scripts-->
+
+    <!--scripts-->
+        {% include "com/scripts.html" %}
+     <!--scripts-->
+    <a href="https://wa.me/11113180000?text=I%20want%20to%20inquire%20about%20Investing" class="float" target="_blank">
+            <i class="fa fa-whatsapp fa-lg my-float"></i>
+    </a>
+  </body>
+  </html>

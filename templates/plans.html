@@ -1,0 +1,230 @@
+{% extends "layouts/base.html" %}
+
+
+
+
+
+
+{% block content %}
+  
+  <!--navbar-->
+    {% include "com/navbar.html" %}
+  <!--navbar-->
+  <!--<br />-->
+  <br />
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>-->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "Nasdaq 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "BTC/USD"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "ETH/USD"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->  <div class="promo section-padding">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-xl-8">
+                          <div class="section-title text-center">
+                              <h2>TRADING PLANS</h2>
+                              <p>Choose from a number of Trading Plans and start trading.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                 
+                  <div class="row">
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                  <h3><span><font color="silver"><i class="fa fa-trophy" aria-hidden="true"></i></span></h3></font> &nbsp;&nbsp;
+                                      <div class="media-body">
+                                      <h3> Silver Plan</h3>
+                                      </div>
+                                  </div>
+                                 
+                              </div>
+                              <div class="card-body">
+                                  <p><font color="white"><h4>$1000</h4></font></p>
+                                  <p><font color="white">5 Trades per Day.</font></p>
+                                  <p><font color="white">Instant Trading.</font></p>
+                                  <p><font color="white">Demo Trading.</font></p>
+                                  <p><font color="white">Leverage upto 2X</font></p>
+                                  <p><font color="white">Round the clock support and assistance.</font></p>
+                                  
+                                <!--  <span class="text-success">+2.05%</span>-->
+                                  <div id="btcChart"></div>
+                                 <a class="btn btn-primary" href="https://acointrading.com/index.php/auth/signup">Start Trading</a> 
+                              </div>
+                          </div>
+                      </div>
+  
+                    
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                  <h3><span><font color="gold"><i class="fa fa-trophy" aria-hidden="true"></i></span></h3></font> &nbsp;&nbsp;
+                                      <div class="media-body">
+                                      <h3> Gold Plan</h3>
+                                      </div>
+                                  </div>
+                                 
+                              </div>
+                              <div class="card-body">
+                                  <p><font color="white"><h4>$5,000</h4></font></p>
+                                  <p><font color="white">15 Trades per Day.</font></p>
+                                  <p><font color="white">Instant Trading.</font></p>
+                                  <p><font color="white">Demo Trading.</font></p>
+                                  <p><font color="white">Leverage upto 2X and 5X</font></p>
+                                  <p><font color="white">Round the clock support and assistance.</font></p>
+                                  
+                                <!--  <span class="text-success">+2.05%</span>-->
+                                <div id="dashChart"></div>
+                                 <a class="btn btn-primary" href="https://acointrading.com/index.php/auth/signup">Start Trading</a> 
+                              </div>
+                          </div>
+                      </div>
+  
+  
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                  <h3><span><font color="#b9f2ff"><i class="fa fa-trophy" aria-hidden="true"></i></span></h3></font> &nbsp;&nbsp;
+                                      <div class="media-body">
+                                      <h3> Diamond Plan</h3>
+                                      </div>
+                                  </div>
+                                 
+                              </div>
+                              <div class="card-body">
+                                  <p><font color="white"><h4>$10,000</h4></font></p>
+                                  <p><font color="white">35 Trades per Day.</font></p>
+                                  <p><font color="white">Instant Trading.</font></p>
+                                  <p><font color="white">Demo Trading.</font></p>
+                                  <p><font color="white">Leverage upto 2X, 5X and 10X </font></p>
+                                  <p><font color="white">Round the clock support and assistance.</font></p>
+                                  
+                                <!--  <span class="text-success">+2.05%</span>-->
+                                <div id="usdtChart"></div>
+                                 <a class="btn btn-primary" href="https://acointrading.com/index.php/auth/signup">Start Trading</a> 
+                              </div>
+                          </div>
+                      </div>
+  
+  
+  
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                  <h3><span><font color="#e5e4e2"><i class="fa fa-trophy" aria-hidden="true"></i></span></h3></font> &nbsp;&nbsp;
+                                      <div class="media-body">
+                                      <h3> Platinum Plan</h3>
+                                      </div>
+                                  </div>
+                                 
+                              </div>
+                              <div class="card-body">
+                                  <p><font color="white"><h4>$50,000</h4></font></p>
+                                  <p><font color="white">Unlimited Trades per Day.</font></p>
+                                  <p><font color="white">Instant Trading.</font></p>
+                                  <p><font color="white">Demo Trading.</font></p>
+                                  <p><font color="white">Leverage upto 2X, 5X, 10X and 20X</font></p>
+                                  <p><font color="white">Round the clock support and assistance.</font></p>
+                                  
+                                <!--  <span class="text-success">+2.05%</span>-->
+                                <div id="xrpChart"></div>
+                                 <a class="btn btn-primary" href="https://acointrading.com/index.php/auth/signup">Start Trading</a> 
+                              </div>
+                          </div>
+                      </div>
+  
+   
+  
+                     
+                      
+  
+                  
+  
+                      
+  
+                      
+  
+                  </div>
+              </div>
+          </div>
+      <div class="bottom section-padding">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                          <div class="bottom-logo">
+                              <img class="pb-3" src="https://acointrading.com/assets/home/images/logo.png" alt="">
+  
+                              <p>Trading Bitcoin and more Cryptocurrency Assets with ease.</p>
+                              <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li> 
+                          <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                          <div class="bottom-widget">
+                              <h4 class="widget-title">Support</h4>
+                              <ul>
+                                  <!--<li><a href="https://acointrading.com/index.php/home/about">About</a></li>-->
+                                  <li><a href="https://acointrading.com/index.php/home/contact">Contact</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/faqs">Faqs</a></li>
+                                   <li><a href="https://acointrading.com/index.php/home/terms">Terms & Conditions</a></li>
+                                
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                          <div class="bottom-widget">
+                              <h4 class="widget-title">Links</h4>
+                              <ul>
+                                  <li><a href="https://acointrading.com/index.php/home/plans">Plans</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/features">Features</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/prices">Prices</a></li> 
+                                  <li><a href="https://acointrading.com/index.php/home/privacy">Privacy</a></li>
+                                    
+                              </ul>
+                          </div>
+                      </div>
+  
+                       
+                     
+                      </div>
+                  </div>
+              </div>
+{% endblock content %}
+         
+  

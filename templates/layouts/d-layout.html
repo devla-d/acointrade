@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Header-->
+    {% include "com/d-header.html" %}
+    <!--Header-->
+</head>
+
+<body>
+    {% if messages %} {% for message in messages %}
+    <div class="messages" data-msg="{{ message }}"></div>
+    {% endfor %} {% endif %}
+
+    <div class="wrapper dashboard">
+        <!--sidebar-->
+        {% include "com/d-sidebar.html" %}
+        <!--sidebar-->
+        <div id="content-wrapper" class="content-wrapper ">
+            <div>
+                <!-- TopBar -->
+                {% include "com/d-navbar.html" %}
+                <!-- Topbar -->
+
+                {% block content %} {% endblock content %}
+                <!-- Footer -->
+
+                <!-- Footer -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--scripts-->
+    {% include "com/d-scripts.html" %}
+    <!--scripts-->
+
+</body>
+
+</html>

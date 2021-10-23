@@ -1,0 +1,87 @@
+/* [ RESPONSIVE DESIGN STYLES ] */
+
+
+/*================================================== */
+
+
+/*** Only Wide Screens ***/
+
+@media(min-width:1600px) {}
+
+
+/*** Large Devices, Wide Screens ***/
+
+@media (min-width: 1200px) {
+    .topbar #sidebarToggleclose {
+        display: none;
+    }
+}
+
+
+/*** Devices Width 767px and Up ***/
+
+@media (min-width:767px) {}
+
+
+/*** Only Medium Devices, Desktops ***/
+
+@media (max-width:1200px) and (min-width:992px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media (max-width:1200px) {}
+
+
+/* Small Devices, Tablets */
+
+@media (max-width: 992px) {}
+
+
+/*** Only Small Devices ***/
+
+@media (max-width: 992px) and (min-width:768px) {
+    .sidebar {
+        left: -200px;
+    }
+    #content-wrapper {
+        padding-left: 0;
+        transition: all 0.3s;
+    }
+    .content-wrapper.collapesed {
+        padding-left: 200px !important;
+        transition: all 0.3s;
+    }
+    .topbar #sidebarToggleTop {
+        display: inline-block;
+    }
+}
+
+
+/* Small Devices Potrait */
+
+@media (max-width: 767px) {
+    .sidebar {
+        left: -200px;
+    }
+    #content-wrapper {
+        padding-left: 0;
+        transition: all 0.3s;
+    }
+    .content-wrapper.collapesed {
+        padding-left: 200px !important;
+        transition: all 0.3s;
+    }
+    .topbar #sidebarToggleTop {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 767px) and (min-width:571px) {}
+
+@media (max-width: 570px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media (max-width: 480px) {}

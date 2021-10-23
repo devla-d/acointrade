@@ -1,0 +1,73 @@
+{% extends "layouts/d-layout.html" %} {% block content %}
+<style>
+    ul {
+        padding: 0;
+    }
+</style>
+<!-- Container Fluid-->
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12">
+
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title text-bold text-white">Make Payment of <span class="text-danger">{{ transaction.amount }}</span> {{ transaction.coin }} (in ONE payment) via {{ transaction.coin }} to</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-pane fade show active" id="tab1">
+
+
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="bc1qt2j9n29w98v425yltv8l63ugh7z90dw0cyqu6k" id="input-copy">
+
+                                <div class="input-group-append">
+                                    <a class="btn btn-primary" style="color: white" data-clipboard-action="copy" data-clipboard-target="#input-copy">Copy Address</a>
+                                </div>
+                            </div>
+                            <ul class="mt-4">
+                                <li class="mt-4">
+                                    <i class="mdi mdi-checkbox-blank-circle"></i> Send <b><font color="red">{{ transaction.amount }} {{ transaction.coin }}</font></b> (in ONE payment) to Address Above
+                                </li>
+                                <li class="mt-4">
+                                    <i class="mdi mdi-checkbox-blank-circle"></i> Double check wallet address to be
+                                    <b><font color="red">bc1qt2j9n29w98v425yltv8l63ugh7z90dw0cyqu6k</font></b> before sending.
+                                </li>
+                            </ul>
+
+
+
+                            <!-- Litecoin Payment -->
+
+
+
+
+                            <br>
+                            <br>
+                            <form action="/confirm-deposite/" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="transaction_id" value="{{ transaction.id }}">
+                                <div class="form-group">
+                                    <label class="mr-sm-2">Payment Details</label>
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Enter Additional Comment" name="details" required="">
+                                    </div>
+
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Complete Transaction</button>
+
+                            </form>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Container Fluid-->
+
+{% endblock content %}

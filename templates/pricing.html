@@ -1,0 +1,118 @@
+{% extends "layouts/base.html" %}
+
+
+
+
+
+
+{% block content %}
+
+<!--navbar-->
+{% include "com/navbar.html" %}
+<!--navbar-->
+<!--<br />-->
+<br />
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>-->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async>
+            {
+                "symbols": [
+                    {
+                        "proName": "FOREXCOM:SPXUSD",
+                        "title": "S&P 500"
+                    },
+                    {
+                        "proName": "FOREXCOM:NSXUSD",
+                        "title": "Nasdaq 100"
+                    },
+                    {
+                        "proName": "FX_IDC:EURUSD",
+                        "title": "EUR/USD"
+                    },
+                    {
+                        "proName": "BITSTAMP:BTCUSD",
+                        "title": "BTC/USD"
+                    },
+                    {
+                        "proName": "BITSTAMP:ETHUSD",
+                        "title": "ETH/USD"
+                    }
+                ],
+                    "showSymbolLogo": true,
+                        "colorTheme": "dark",
+                            "isTransparent": false,
+                                "displayMode": "adaptive",
+                                    "locale": "en"
+            }
+        </script>
+</div>
+<!-- TradingView Widget END -->
+<div class="promo section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <div class="section-title text-center">
+                    <h2>CRYPTOCURRENCY LIVE PRICE</h2>
+                    <p>Get cryptocurrency prices for 20 assets.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            style="height:1259px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; box-sizing:content-box; font-feature-settings: normal; text-size-adjust: 100%;  padding: 0px; margin: 0px; width: 99%;">
+            <div style="height:1239px;"><iframe
+                    src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=20&pref_coin_id=1505&graph=yes"
+                    width="100%" height="1235" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0"
+                    border="0" style="border:0;margin:0;padding:0;"></iframe></div>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="bottom section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="bottom-logo">
+                    <img class="pb-3" src="https://acointrading.com/assets/home/images/logo.png" alt="">
+
+                    <p>Trading Bitcoin and more Cryptocurrency Assets with ease.</p>
+                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                <div class="bottom-widget">
+                    <h4 class="widget-title">Support</h4>
+                    <ul>
+                        <!--<li><a href="https://acointrading.com/index.php/home/about">About</a></li>-->
+                        <li><a href="https://acointrading.com/index.php/home/contact">Contact</a></li>
+                        <li><a href="https://acointrading.com/index.php/home/faqs">Faqs</a></li>
+                        <li><a href="https://acointrading.com/index.php/home/terms">Terms & Conditions</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                <div class="bottom-widget">
+                    <h4 class="widget-title">Links</h4>
+                    <ul>
+                        <li><a href="https://acointrading.com/index.php/home/plans">Plans</a></li>
+                        <li><a href="https://acointrading.com/index.php/home/features">Features</a></li>
+                        <li><a href="https://acointrading.com/index.php/home/prices">Prices</a></li>
+                        <li><a href="https://acointrading.com/index.php/home/privacy">Privacy</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+{% endblock content %}

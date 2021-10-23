@@ -1,0 +1,76 @@
+{% extends "layouts/d-layout.html" %}{% load static %} {% load crispy_forms_tags %} {% block content %}
+
+<!-- Container Fluid-->
+<div class="container">
+
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="card">
+                        <div class="card-body py-10">
+                            <div class="media">
+                                <div class="media-image mr-3 mr-sm-3">
+                                    <img class="rounded-circle" src="{% static '/user/images/img/boy.png' %}" style="max-width: 90px" alt="">
+                                </div>
+                                <div class="media-body mt-2">
+                                    <h4 class="mb-2" style="color: #ffffff;"> {{ user.username }} </h4>
+                                    <p class="mb-1"> <span><i class="fa fa-phone mr-2 has-text-link"></i></span> {{ user.phone }}</p>
+                                    <p class="mb-1"> <span><i class="fa fa-envelope mr-2 has-text-link"></i></span> {{ user.email }} </p>
+                                </div>
+                            </div>
+                            <ul class=" account-detail mt-4">
+                                <li>
+                                    <h5 class="mr-4">Balance</h5>
+                                    <span class="text-muted">${{ user.balance }}</span>
+                                </li>
+                                <li>
+                                    <h5 class="mr-4">Fullname</h5>
+                                    <span class="text-muted">{{ user.fullname }}</span>
+                                </li>
+                                <li>
+                                    <h5 class="mr-4">Address</h5>
+                                    <span class="text-muted">{{ user.address }}</span>
+                                </li>
+                                <li class="mb-1">
+                                    <h5 class="mr-4">Postal code</h5>
+                                    <span>{{ user.postalcode }}</span>
+                                </li>
+                                <li class="mb-1">
+                                    <h5 class="mr-4">Country</h5>
+                                    <span>{{ user.country }}</span>
+                                </li>
+                                <li class="mb-1">
+                                    <h5 class="mr-4">Date Of Birth</h5>
+                                    <span>{{ user.date_of_birth|date:'d M, Y' }}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Edit Account</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="/my-account/" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="destination" value="{{ destination }}"> {{ form|crispy }}
+
+                                <div class="text-center">
+                                    <input type="submit" name="action" class="btn btn-success btn-block" value="Update">
+                                    <!--  <button type="submit" name="action" class="btn btn-success btn-block" value="Sign in">Sign in</button>-->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Container Fluid-->
+</div>
+{% endblock content %}

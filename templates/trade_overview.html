@@ -1,0 +1,83 @@
+{% extends "layouts/d-layout.html" %} {% block content %}
+
+<!-- Container Fluid-->
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12">
+
+            <div class="card sub-menu">
+                <div class="card-body active">
+                    <ul class="d-flex show">
+                        <li class="nav-item active">
+                            <a href="/trading-overview/" class="nav-link active">
+                                <i class="mdi mdi-bullseye"></i>
+                                <span>Trade Earnings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/deposite-overview/" class="nav-link">
+                                <i class="mdi mdi-heart"></i>
+                                <span>Deposit History</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/withdraw-overview/" class="nav-link">
+                                <i class="mdi mdi-pentagon"></i>
+                                <span>Withdrawal History</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Transactions History</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="transaction-table">
+                            <div class="table-responsive">
+                                <table class="table table-striped mb-0 table-responsive-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Trade ID</th>
+                                            <th>Trade Time</th>
+                                            <th>Symbol Traded</th>
+                                            <th>Amount Traded</th>
+                                            <th>Expected Payout</th>
+                                            <th>Leverage</th>
+
+                                            <th>End Price</th>
+                                            <th>End Time</th>
+                                            <th>Trade Status</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td colspan="9">
+                                                <div class="alert alert-danger text-center text-bold"> No Trade in History Yet! </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Container Fluid-->
+
+{% endblock content %}

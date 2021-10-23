@@ -1,0 +1,55 @@
+{% load static %}
+
+
+
+<script src="{% static '/user/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static '/user/js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static '/user/js/infinite.min.js' %}"></script>
+<script src="{% static '/user/js/popper.min.js' %}"></script>
+<script src="{% static '/user/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/user/js/wow.min.js' %}"></script>
+<script src="/static/dash/js/bootstrap-input-spinner.js"></script>
+<script src="/static/dash/js/amcharts.js"></script>
+<script src="/static/dash/js/serial.js"></script>
+<script src="/static/dash/js/dataloader.min.js"></script>
+<script src="/static/dash/js/dark.js"></script>
+<script src="/static/dash/js/amchart-init.js"></script>
+
+<script src="{% static '/user/js/toastr.min.js' %}"></script>
+
+<script src="{% static '/user/js/toastr-init.js' %}"></script>
+<script src="{% static '/user/js/circle-progress.min.js' %}"></script>
+<script src="{% static '/user/js/circle-progress-init.js' %}"></script>
+<script src="{% static '/user/js/select2.full.min.js' %}"></script>
+
+<!--  flot-chart js -->
+<script src="/static/js/perfect-scrollbar.min.js"></script>
+<script src="/static/js/apexchart-init.js"></script>
+
+
+
+
+<script src="/static/dash/js/dashboard.js"></script>
+<script src="/static/dash/js/clipboard.min.js"></script>
+<script>
+    new ClipboardJS('.btn');
+</script>
+<script src="{% static '/user/js/scripts.js' %}"></script>
+
+<script src="/static/dash/js/settings.js"></script>
+<script src="/static/dash/js/quixnav-init.js"></script>
+<script src="/static/dash/js/styleSwitcher.js"></script>
+
+
+<script>
+    var auto_refresh = setInterval(
+        (function() {
+            $("#randomtext").load("load_trade_history"); //Load the content into the div
+        }), 1000);
+</script>
+
+<script>
+    setInterval(function() {
+        $("#diw").load("btc_usd_converter");
+    }, 700);
+</script>

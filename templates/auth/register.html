@@ -1,0 +1,135 @@
+{% extends "layouts/base.html" %}
+{% load crispy_forms_tags %}
+
+
+
+
+
+{% block content %}
+  
+  <!--navbar-->
+    {% include "com/navbar.html" %}
+  <!--navbar-->
+    <!--<br />-->
+    <br />
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>-->
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+            async>
+                {
+                    "symbols": [
+                        {
+                            "proName": "FOREXCOM:SPXUSD",
+                            "title": "S&P 500"
+                        },
+                        {
+                            "proName": "FOREXCOM:NSXUSD",
+                            "title": "Nasdaq 100"
+                        },
+                        {
+                            "proName": "FX_IDC:EURUSD",
+                            "title": "EUR/USD"
+                        },
+                        {
+                            "proName": "BITSTAMP:BTCUSD",
+                            "title": "BTC/USD"
+                        },
+                        {
+                            "proName": "BITSTAMP:ETHUSD",
+                            "title": "ETH/USD"
+                        }
+                    ],
+                        "showSymbolLogo": true,
+                            "colorTheme": "dark",
+                                "isTransparent": false,
+                                    "displayMode": "adaptive",
+                                        "locale": "en"
+                }
+            </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <div class="authincation section-padding">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-5 col-md-6">
+
+                    <div class="auth-form card">
+                        <div class="card-header justify-content-center">
+                            <h4 class="card-title">Sign Up to Start Trading</h4>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" action="/register/">
+                                 
+                                {% csrf_token %}
+
+                                {{ form|crispy }}
+
+
+                                <div class="row px-3 mb-4">
+
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <input type="submit" class="btn btn-success btn-block" value="Create Account">
+                                </div>
+                            </form>
+                            <div class="new-account mt-3">
+                                <p>Already have an account? <a class="text-primary" href="signin">Sign in</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--</div>-->
+    <div class="bottom section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <div class="bottom-logo">
+                        <img class="pb-3" src="https://acointrading.com/assets/home/images/logo.png" alt="">
+
+                        <p>Trading Bitcoin and more Cryptocurrency Assets with ease.</p>
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                    <div class="bottom-widget">
+                        <h4 class="widget-title">Support</h4>
+                        <ul>
+                            <!--<li><a href="https://acointrading.com/index.php/home/about">About</a></li>-->
+                            <li><a href="https://acointrading.com/index.php/home/contact">Contact</a></li>
+                            <li><a href="https://acointrading.com/index.php/home/faqs">Faqs</a></li>
+                            <li><a href="https://acointrading.com/index.php/home/terms">Terms & Conditions</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                    <div class="bottom-widget">
+                        <h4 class="widget-title">Links</h4>
+                        <ul>
+                            <li><a href="https://acointrading.com/index.php/home/plans">Plans</a></li>
+                            <li><a href="https://acointrading.com/index.php/home/features">Features</a></li>
+                            <li><a href="https://acointrading.com/index.php/home/prices">Prices</a></li>
+                            <li><a href="https://acointrading.com/index.php/home/privacy">Privacy</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+

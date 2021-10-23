@@ -1,0 +1,178 @@
+{% extends "layouts/base.html" %}
+
+
+
+
+
+
+{% block content %}
+  
+  
+  <!--navbar-->
+    {% include "com/navbar.html" %}
+  <!--navbar-->
+  <!--<br />-->
+  <br />
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>-->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "Nasdaq 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "BTC/USD"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "ETH/USD"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->  
+    <div class="promo section-padding">
+    <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-8">
+            <div class="section-title text-center">
+                <h2>FEATURES OF FOTRADING</h2>
+                <p> Here are a few reasons why our users keep sailing!!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center py-5">
+        <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="promo-content">
+                <div class="promo-content-img">
+                    <img class="img-fluid" src="https://acointrading.com/assets/home/images/svg/protect.svg" alt="">
+                </div>
+                <h3>Amplify your Tradings </h3>
+                <p>We offer advanced trading options so you can execute more complex trade strategies. Leverage up to 5X when margin trading with FoTrading.</p>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="promo-content">
+                <div class="promo-content-img">
+                    <img class="img-fluid" src="https://acointrading.com/assets/home/images/svg/cyber.svg" alt="">
+                </div>
+                <h3>Top notch Security Platform</h3>
+                <p>Our world-class team of security experts work around the clock to cover every possible vector of attack so your cryptocurrency investments and identity stay protected.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="promo-content">
+                <div class="promo-content-img">
+                    <img class="img-fluid" src="https://acointrading.com/assets/home/images/svg/finance.svg" alt="">
+                </div>
+                <h3>Easy & Convenient Funding Options</h3>
+                <p>We are dedicated to making sure you can fund your account easily, wherever you are. Acoin Trading leads the industry in fiat and crypto funding options with low processing times.</p>
+            </div>
+        </div>
+
+
+        <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="promo-content">
+                <div class="promo-content-img">
+                    <img class="img-fluid" src="https://acointrading.com/assets/home/images/cc.png" alt="">
+                </div>
+                <h3>247 Global Online Support</h3>
+                <p>Reach out to our highly qualified support team via live chat any time for assistance, or quickly find what you need with our extensive support documentation.</p>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="promo-content">
+                <div class="promo-content-img">
+                    <img class="img-fluid" src="https://acointrading.com/assets/home/images/liq.png" alt="">
+                </div>
+                <h3>Liquidity</h3>
+                <p>Cryptocurrency prices can change quickly. To ensure you can maximize profits, you need to move in and out of the market quickly.  At FoTrading, our deep liquidity ensures trade execution at the price you want <b>-- with spreads as tight as 1 pip</b>.</p>
+            </div>
+        </div>
+
+
+
+        <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="promo-content">
+                <div class="promo-content-img">
+                    <img class="img-fluid" src="https://acointrading.com/assets/home/images/fees.png" alt="">
+                </div>
+                <h3>Trading Plans</h3>
+                <p>
+                Get to know our Trading Plans, Stablecoin fees, FX fees, Dark Pool fees and Margin Trading fees. Our fee schedules are volume-based: the more total volume you trade in your account, the lower your fee on subsequent trades. Click <a href="https://acointrading.com/index.php/home/plans">here</a> to see our complete plans.</p>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+      <div class="bottom section-padding">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                          <div class="bottom-logo">
+                              <img class="pb-3" src="https://acointrading.com/assets/home/images/logo.png" alt="">
+  
+                              <p>Trading Bitcoin and more Cryptocurrency Assets with ease.</p>
+                              <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li> 
+                          <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                          <div class="bottom-widget">
+                              <h4 class="widget-title">Support</h4>
+                              <ul>
+                                  <!--<li><a href="https://acointrading.com/index.php/home/about">About</a></li>-->
+                                  <li><a href="https://acointrading.com/index.php/home/contact">Contact</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/faqs">Faqs</a></li>
+                                   <li><a href="https://acointrading.com/index.php/home/terms">Terms & Conditions</a></li>
+                                
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                          <div class="bottom-widget">
+                              <h4 class="widget-title">Links</h4>
+                              <ul>
+                                  <li><a href="https://acointrading.com/index.php/home/plans">Plans</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/features">Features</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/prices">Prices</a></li> 
+                                  <li><a href="https://acointrading.com/index.php/home/privacy">Privacy</a></li>
+                                    
+                              </ul>
+                          </div>
+                      </div>
+  
+                       
+                     
+                      </div>
+                  </div>
+      </div>
+
+{% endblock content %}

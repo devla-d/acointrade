@@ -1,0 +1,50 @@
+{% load static %}
+
+
+<div class="sidebar">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon">
+            <img src="{% static '/images/logo.png' %}">
+        </div>
+    </a>
+    <hr class="sidebar-divider my-0">
+    <ul class="menu">
+        <li class="menu-item">
+            <a href="/my-dashboard" class="menu-link">
+                <i class="mdi mdi-view-dashboard"></i>
+                <span>Trade</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="/trading-overview" class="menu-link">
+                <i class="mdi mdi-tumblr-reblog"></i>
+                <span>Trade Overview</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="/deposite" class="menu-link">
+                <i class="mdi mdi-face-profile"></i>
+                <span>Deposit</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="/withdraw" class="menu-link">
+                <i class="mdi mdi-face-profile"></i>
+                <span>Withdraw</span>
+            </a>
+        </li>
+
+        <li class="menu-item">
+            <a href="/my-account/" class="menu-link">
+                <i class="mdi mdi-settings"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="/logout" class="menu-link text-danger">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout </span>
+            </a>
+        </li>
+    </ul>
+</div>

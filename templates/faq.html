@@ -1,0 +1,274 @@
+{% extends "layouts/base.html" %}
+
+
+
+
+
+
+{% block content %}
+  
+  <!--navbar-->
+    {% include "com/navbar.html" %}
+  <!--navbar-->
+  <!--<br />-->
+  <br />
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>-->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "Nasdaq 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "BTC/USD"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "ETH/USD"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END --><style>
+       .our-faq-wrapper {
+    float: left;
+    width: 100%;
+    padding: 89px 0 60px;
+    background:#f5f5f5;
+  }
+  
+  .our-faq-wrapper {
+      padding: 90px 0 60px;
+    background:#fff;  
+  }
+  .accordion .card {
+    border: none;
+    margin-bottom: 30px;
+  }
+  .our-faq-wrapper .btn-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    background: #242c42;
+    color: #fff;
+    border-radius: 0;
+    padding: 7px 15px 12px;
+    font-size: 16px;
+    overflow: hidden;
+    border: none;
+    font-weight:600;  
+  }
+  .our-faq-wrapper .btn-link:hover, .our-faq-wrapper .btn-link:focus {
+    text-decoration: none;
+  }
+  .our-faq-wrapper .btn-link:after {
+    position: absolute;
+    content: '\f068';
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: fontawesome;
+  }
+  .our-faq-wrapper .btn-link.collapsed:after {
+    content: '\f067';
+  }
+  .our-faq-wrapper .btn-link:before {
+    position: absolute;
+    content: '';
+    background: #86bc42;
+    -webkit-transform: skew(-35deg);
+    transform: skew(-35deg);
+    height: 100%;
+    width: 50%;
+    left: 90%;
+    top: 0;
+  }
+  .card-header {
+    padding: 0;
+    background: transparent;
+    border-bottom: none;
+  }
+  .card-body {
+    position: relative;
+  }
+  .card-body:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #242c42;
+  }
+  .card-body:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    background: #86bc42;
+    z-index: 1;
+  }
+       </style>
+  
+                    
+  <div class="our-faq-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+  
+                          <div class="faq-title text-center pb-3">
+                              <h2><font color="black">Frequently Asked Question's</font>/h2>
+                          </div>
+                      </div>
+   
+  
+                          
+        <div class="col-lg-6">
+          <div class="accordion" id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> What methods are available for depositing funds into my account? </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body"> The methods available for funding your account are by cryptocurrency (Bitcoin, Ethereum and Litecoin and many more). We do not accept Fiat on our trading platform as we are fully a cryptocurrency organisation. </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> What documents do I need to provide when opening an account?</button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body"> You will need to provide a copy of a valid government-issued ID. (Passport, driver’s license, ID card)
+  
+  
+  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Does uploading my document automatically get my account verified?</button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body"> Immediately you upload your document, we would process it for verification and a success or denied notification would be sent to you by mail </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion" id="accordion2">
+            <div class="card">
+              <div class="card-header" id="heading4">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"> What are the available methods of withdrawal?
+   </button>
+                </h5>
+              </div>
+              <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion2">
+                <div class="card-body"> To withdraw from your balance, you will have to provide a wallet address (Bitcoin, Bitcoin cash, Ethereum, Litecoin, Dash). </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="heading5">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> What can I trade with FoTrading Broker? </button>
+                </h5>
+              </div>
+              <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion2">
+                <div class="card-body"> Acoin Trading is dedicated to providing a variety of cryptocurrencies for trade based on the prevailing price and fluctuations.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="heading6">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> Does third party trade access my account completely? </button>
+                </h5>
+              </div>
+              <div id="collapse6" class="collapse show" aria-labelledby="heading6" data-parent="#accordion2">
+                <div class="card-body"> The API used for third party trades allows access into your trade area only. The third party is completely and securely restricted from account operations such as deposit and withdrawal of funds. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>      
+  
+                      
+  
+                  </div>
+              </div>
+          </div>
+  
+              <div class="bottom section-padding">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                          <div class="bottom-logo">
+                              <img class="pb-3" src="https://acointrading.com/assets/home/images/logo.png" alt="">
+  
+                              <p>Trading Bitcoin and more Cryptocurrency Assets with ease.</p>
+                              <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li> 
+                          <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                          <div class="bottom-widget">
+                              <h4 class="widget-title">Support</h4>
+                              <ul>
+                                  <!--<li><a href="https://acointrading.com/index.php/home/about">About</a></li>-->
+                                  <li><a href="https://acointrading.com/index.php/home/contact">Contact</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/faqs">Faqs</a></li>
+                                   <li><a href="https://acointrading.com/index.php/home/terms">Terms & Conditions</a></li>
+                                
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                          <div class="bottom-widget">
+                              <h4 class="widget-title">Links</h4>
+                              <ul>
+                                  <li><a href="https://acointrading.com/index.php/home/plans">Plans</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/features">Features</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/prices">Prices</a></li> 
+                                  <li><a href="https://acointrading.com/index.php/home/privacy">Privacy</a></li>
+                                    
+                              </ul>
+                          </div>
+                      </div>
+  
+                       
+                     
+                      </div>
+                  </div>
+              </div>
+{% endblock content %}
+  

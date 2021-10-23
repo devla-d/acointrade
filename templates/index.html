@@ -1,0 +1,530 @@
+{% extends "layouts/base.html" %}
+
+
+
+
+
+
+{% block content %}
+  
+  <!--navbar-->
+    {% include "com/navbar.html" %}
+  <!--navbar-->
+  <!--<br />-->
+  <br />
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>-->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "Nasdaq 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR/USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "BTC/USD"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "ETH/USD"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->        <div class="appss section-padding"  data-scroll-index="4">
+              <div class="container">
+                  <div class="row align-items-center justify-content-between">
+                      <div class="col-xl-7 col-lg-6 col-md-6">
+                          <div class="appss-content">
+                              <h2>Welcome to Acoin Trading.<br> Trading 
+                                  Cryptocurrency made easy</h2>
+                              <ul>
+                                  <li><i class="la la-check"></i> All your digital assets in one place</li>
+                                  <li><i class="la la-check"></i> Use Decentralized Apps</li>
+                                  
+                              </ul>
+                              <div class="mt-4">
+                                  <a href="https://acointrading.com/index.php/auth/signup" class="btn btn-primary my-1 waves-effect">
+                                      Start Trading
+                                  </a>
+                                 
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-5 col-lg-6 col-md-6">
+                          <div class="appss-img">
+                              <img class="img-fluid" src="https://acointrading.com/assets/home/frrr.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+  
+  
+          
+  
+          <div class="price-grid section-padding" data-scroll-index="1">
+              <div class="container">
+                  <div class="row py-lg-5 justify-content-center">
+                      <div class="col-xl-7">
+                          <div class="section-title text-center">
+                              <h2>HOW MAY WE HELP YOU?</h2>
+                              <p>We are consistently rated the best and most secure cryptocurrency trading platform.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                      <span><i class="cc BTC"></i></span>
+                                      <div class="media-body">
+                                          New to Crypto?
+                                      </div>
+                                  </div>
+                                 
+                              </div>
+                              <div class="card-body">
+                                  <p><font color="white">Cryptocurrency is an internet-based medium of exchange which uses cryptographic functions to conduct financial transactions.</font></p>
+                                <!--  <span class="text-success">+2.05%</span>-->
+                                  <div id="btcChart"></div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                      <span><i class="cc LTC"></i></span>
+                                      <div class="media-body">
+                                          How do you handle Security?
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+                              <div class="card-body">
+                                  <p>Our team of experts have built in a number of sophisticated measures to prevent the theft of money or information.</p>
+                                   <div id="ltcChart"></div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                      <span><i class="cc DASH"></i></span>
+                                      <div class="media-body">
+                                          24/7 All round support
+                                      </div>
+                                  </div>
+                                   
+                              </div>
+                              <div class="card-body">
+                                  <p></h3>We boast of hundreds of full-time, dedicated Client Engagement specialists who are knowledgeable of crypto and financial services</p>
+                                
+                                  <div id="dashChart"></div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                      <span><i class="cc XRP"></i></span>
+                                      <div class="media-body">
+                                          Unlimited Funding Options
+                                      </div>
+                                  </div>
+                                 
+                              </div>
+                              <div class="card-body">
+                                  <p>Acoin Trading is dedicated to providing you with low fees and a variety of digital and fiat funding options to power your cryptocurrency investments.</p>
+                                  
+                                  <div id="xrpChart"></div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                      <span><i class="cc ETH"></i></span>
+                                      <div class="media-body">
+                                          Do you support Leverage Trading?
+                                      </div>
+                                  </div>
+                                 
+                              </div>
+                              <div class="card-body">
+                                  <p>Yes our Leverage trading feature lets you amplify your gains from market swings, allowing you to execute more complex, active trading strategies.</p>
+                                  
+                                  <div id="ethChart"></div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                      <span><i class="cc USDT"></i></span>
+                                      <div class="media-body">
+                                          Trading BOT Integration
+                                      </div>
+                                  </div>
+                               
+                              </div>
+                              <div class="card-body">
+                                  <p>Our platform has been equipped with the latest and most popular trading BOTS and automated trading softwares needed to maximize profit and reduce loss.</p>
+                                
+                                  <div id="usdtChart"></div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                      <span><i class="cc ETH"></i></span>
+                                      <div class="media-body">
+                                          Unique API Functionality
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+                              <div class="card-body">
+                                  <p>All of our partners have unlimited access to the exclusive API functions backed by the exchange with the world's highest crypto liquidity.</p>
+                                 
+                                  <div id="eosChart"></div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                          <div class="card">
+                              <div class="card-header">
+                                  <div class="media">
+                                      <span><i class="cc XTZ"></i></span>
+                                      <div class="media-body">
+                                          Customizable Strategies
+                                      </div>
+                                  </div>
+                                 
+                              </div>
+                              <div class="card-body">
+                                  <p>Our Platform supports both spot and futures trading, to enable a full possibility of customization to meet our client's requirements and enhance their strategies.</p>
+                                  
+                                  <div id="xtzChart"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="getstart section-padding">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-xl-8">
+                          <div class="section-title">
+                              <h2>Get started in a few minutes</h2>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                          <div class="getstart-content">
+                              <span><i class="la la-user-plus"></i></span>
+                              <h3>Create an account</h3>
+                              <p>Open a free account in less than a minute. Smooth seamless process, we've made it easy for everyone anywhere!</p>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                          <div class="getstart-content">
+                              <span><i class="la la-paper-plane-o"></i></span>
+                              <h3>Choose a Trading Plan</h3>
+                              <p>Choose from our flexible trading plans to get started.</p>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                          <div class="getstart-content">
+                              <span><i class="la la-exchange"></i></span>
+                              <h3>Start Trading</h3>
+                              <p>Start trading and maximizing profit instantly after your first deposit.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+  
+  
+          <div class="portfolio section-padding" data-scroll-index="2">
+              <div class="container">
+                  <div class="row py-lg-5 justify-content-center">
+                      <div class="col-xl-7">
+                          <div class="section-title text-center">
+                              <h2>Currency Market</h2>
+                              <p>Latest price insight on the currency market, to help you make informed decsions</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row align-items-center justify-content-between">
+                      <div class="col-xl-7 col-lg-6">
+                          <div class="portfolio_list">
+                              <div class="row">
+                                  <div class="col-xl-6">
+                                      <div class="media">
+                                          <span class="port-icon"> <i class="la la-bitcoin"></i></span>
+                                          <div class="media-body">
+                                              <h4>BTC/USD</h4>
+                                              <p> 
+                                                  <span class="value ">   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                                                      {
+                                                      "symbols": [
+                                                        {
+                                                          "proName": "BITSTAMP:BTCUSD",
+                                                          "title": " "
+                                                        }
+                                                      ],
+                                                      "colorTheme": "light",
+                                                      "isTransparent": true,
+                                                      "locale": "en"
+                                                    }
+                                                      </script></span>
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6">
+                                      <div class="media">
+                                          <span class="port-icon"> <i class="la la-bitcoin"></i></span>
+                                          <div class="media-body">
+                                              <h4>BTC/EUR</h4>
+                                              <p>  <span class="value "> <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                                                  {
+                                                  "symbols": [
+                                                    {
+                                                      "description": " ",
+                                                      "proName": "BITPANDAPRO:BTCEUR"
+                                                    }
+                                                  ],
+                                                  "colorTheme": "light",
+                                                  "isTransparent": true,
+                                                  "locale": "en"
+                                                }
+                                                  </script></span>
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6">
+                                      <div class="media">
+                                          <span class="port-icon"> <i class="la la-bitcoin"></i></span>
+                                          <div class="media-body">
+                                              <h4>EUR/USD</h4>
+                                              <p><span class="value "> <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                                                  {
+                                                  "symbols": [
+                                                    {
+                                                      "proName": "FX_IDC:EURUSD",
+                "title": ""
+                                                    }
+                                                  ],
+                                                  "colorTheme": "light",
+                                                  "isTransparent": true,
+                                                  "locale": "en"
+                                                }
+                                                  </script></span>
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-6">
+                                      <div class="media">
+                                          <span class="port-icon"> <i class="la la-bitcoin"></i></span>
+                                          <div class="media-body">
+                                              <h4>ETH/USD</h4>
+                                              <p> <span class="value "><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                                                  {
+                                                  "symbols": [
+                                                    {
+                                                      "proName": "BITSTAMP:ETHUSD",
+                "title": ""
+                                                    }
+                                                  ],
+                                                  "colorTheme": "light",
+                                                  "isTransparent": true,
+                                                  "locale": "en"
+                                                }
+                                                  </script></span></p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-5 col-lg-6">
+                          <div class="portfolio_img">
+                              <!-- TradingView Widget BEGIN -->
+                              <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/forex-heat-map/" rel="noopener" target="_blank"><span class="blue-text">Forex Heat Map</span></a> by TradingView</div>-->
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+                                {
+                                "width": "550",
+                                "height": "400",
+                                "currencies": [
+                                  "EUR",
+                                  "USD",
+                                  "JPY",
+                                  "GBP",
+                                  "CHF",
+                                  "AUD",
+                                  "CAD",
+                                  "NZD",
+                                  "CNY"
+                                ],
+                                "isTransparent": false,
+                                "colorTheme": "light",
+                                "locale": "en"
+                              }
+                                </script>
+                              </div>
+                              <!-- TradingView Widget END -->
+                              <!--<img src="https://acointrading.com/assets/home/images/portfolio.jpg" alt="" class="img-fluid">-->
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="trade-app section-padding">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-xl-6">
+                          <div class="section-title text-center">
+                              <h2>Trade Anywhere</h2>
+                              <p> Acoin Trading Platform is efficient, easy, and trusted for all classes of trader's
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-12">
+                          <div class="card trade-app-content">
+                              <div class="card-body">
+                                  <span><i class="la la-mobile"></i></span>
+                                  <h4 class="card-title">Leverage</h4>
+                                  <p>All the power of Trading with leverage available to you on Acoin Trading Platform.</p>
+  
+                                  <a href="https://acointrading.com/index.php/home/features"> Know More <i class="la la-arrow-right"></i> </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-12">
+                          <div class="card trade-app-content">
+                              <div class="card-body">
+                                  <span><i class="la la-desktop"></i></span>
+                                  <h4 class="card-title">Desktop</h4>
+                                  <p>Powerful crypto trading platform for those who mean business. The Acoin Trading crypto
+                                      trading
+                                      experience, tailor-made for your Windows or MacOS device.</p>
+  
+                                  <a href="https://acointrading.com/index.php/home/features"> Know More <i class="la la-arrow-right"></i> </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-12">
+                          <div class="card trade-app-content">
+                              <div class="card-body">
+                                  <span><i class="la la-connectdevelop"></i></span>
+                                  <h4 class="card-title">API</h4>
+                                  <p>The Acoin Trading API is designed to provide an easy and efficient way to integrate trading BOTS or applications on our platfomr</p>
+  
+                                  <a href="https://acointrading.com/index.php/home/features"> Know More <i class="la la-arrow-right"></i> </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+  
+  
+                  </div></div>
+          
+   
+  
+       <div class="bottom section-padding">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                          <div class="bottom-logo">
+                              <img class="pb-3" src="https://acointrading.com/assets/home/images/logo.png" alt="">
+  
+                              <p>Trading Bitcoin and more Cryptocurrency Assets with ease.</p>
+                              <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li> 
+                          <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                          <div class="bottom-widget">
+                              <h4 class="widget-title">Support</h4>
+                              <ul>
+                                  <!--<li><a href="https://acointrading.com/index.php/home/about">About</a></li>-->
+                                  <li><a href="https://acointrading.com/index.php/home/contact">Contact</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/faqs">Faqs</a></li>
+                                   <li><a href="https://acointrading.com/index.php/home/terms">Terms & Conditions</a></li>
+                                
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                          <div class="bottom-widget">
+                              <h4 class="widget-title">Links</h4>
+                              <ul>
+                                  <li><a href="https://acointrading.com/index.php/home/plans">Plans</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/features">Features</a></li>
+                                  <li><a href="https://acointrading.com/index.php/home/prices">Prices</a></li> 
+                                  <li><a href="https://acointrading.com/index.php/home/privacy">Privacy</a></li>
+                                    
+                              </ul>
+                          </div>
+                      </div>
+  
+                       
+                     
+                      </div>
+                  </div>
+              </div>
+
+              
+{% endblock content %}
+ 
+  
+  
+  

@@ -1,0 +1,95 @@
+{% extends "layouts/d-layout.html" %} {% block content %}
+
+<!-- Container Fluid-->
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12">
+
+            <div class="card sub-menu">
+                <div class="card-body active">
+                    <ul class="d-flex show">
+                        <li class="nav-item ">
+                            <a href="/trading-overview/" class="nav-link ">
+                                <i class="mdi mdi-bullseye"></i>
+                                <span>Trade Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="/deposite-overview/" class="nav-link active">
+                                <i class="mdi mdi-heart"></i>
+                                <span>Deposit History</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="/withdraw-overview/" class="nav-link ">
+                                <i class="mdi mdi-pentagon"></i>
+                                <span>Withdrawal History</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Deposit Log</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="transaction-table">
+                            <div class="table-responsive">
+                                <table class="table table-striped mb-0 table-responsive-sm">
+                                    <thead>
+
+
+                                        <tr>
+
+                                            <th class="text-yellow" scope="col">SN</th>
+                                            <th> Type</th>
+                                            <!--<th>Details</th>-->
+                                            <th>Amount</th>
+                                            <th>Date </th>
+                                            <th> Status</th>
+
+                                        </tr>
+
+
+                                    </thead>
+                                    <tbody>
+                                        {% if transactions %} {% for transact in transactions %}
+                                        <tr>
+                                            <th scope="row">{{ forloop.counter }}</th>
+                                            <th scope="row">{{ transact.transac_type }}</th>
+                                            <th scope="row">{{ transact.amount }} {{ transact.coin }}</th>
+                                            <th scope="row">{{ transact.date }}</th>
+                                            <th scope="row">{{ transact.status }}</th>
+
+                                        </tr>
+                                        {% endfor %} {% else %}
+
+                                        <tr>
+
+                                            <td colspan="8">
+                                                <div class="alert alert-danger text-center text-bold"> No Deposit Made Yet! </div>
+                                            </td>
+                                        </tr>
+                                        {% endif %}
+
+
+
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Container Fluid-->
+
+{% endblock content %}
